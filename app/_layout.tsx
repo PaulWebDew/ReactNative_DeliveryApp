@@ -27,6 +27,7 @@ export default function RootLayoutNav() {
             animation: "slide_from_bottom",
             headerShadowVisible: false,
             headerTitle: "Filter",
+
             headerStyle: {
               backgroundColor: Colors.lightGray,
             },
@@ -42,6 +43,32 @@ export default function RootLayoutNav() {
             ),
           }}
         />
+        {/* <Stack.Screen
+          name="(modal)/Details/index"
+          options={{
+            presentation: "containedTransparentModal",
+            animation: "slide_from_bottom",
+            // headerTransparent: true,
+            headerShadowVisible: false,
+            headerTitle: "Details",
+            headerStyle: {
+              backgroundColor: Colors.lightGray,
+            },
+            headerLeft: () => (
+              <TouchableOpacity
+                onPress={() => navigation.goBack()}
+                // style={{ zIndex: 1 }}
+              >
+                <Ionicons
+                  style={{ marginRight: 10 }}
+                  name="close-outline"
+                  size={30}
+                  color={Colors.primary}
+                />
+              </TouchableOpacity>
+            ),
+          }}
+        /> */}
       </Stack>
     </BottomSheetModalProvider>
   );

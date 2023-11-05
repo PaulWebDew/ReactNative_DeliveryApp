@@ -13,7 +13,7 @@ const Restaurants = () => {
       showsHorizontalScrollIndicator={false}
     >
       {restaurants.map((item, index) => (
-        <Link href={"/"} asChild key={index}>
+        <Link href={"/(modal)/Details"} asChild key={index}>
           <TouchableOpacity>
             <View style={styles.categoryCard}>
               <Image style={styles.image} source={item.img} />
